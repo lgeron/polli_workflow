@@ -50,4 +50,4 @@ rm tok.*
 mv stanford* stanford-postagger
 
 num_lines=$3
-python va32pos.py source_tgt.VA3 tgt_source.VA3 $num_lines
+python3 va32pos.py source_tgt.VA3 tgt_source.VA3 $num_lines
