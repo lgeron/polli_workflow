@@ -7,5 +7,5 @@
 
 ## Usage
 
-## Book -> aligned pickle
+### Book -> aligned pickle
 `sh setup.sh language1.FILE1.txt language2.FILE2.txt`
