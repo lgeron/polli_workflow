@@ -47,5 +47,5 @@ rm -rf output_tgt
 rm tok.*
 
 # PYTHON FILES
-
-
+num_lines=$3
+python va32pos.py source_tgt.VA3 tgt_source.VA3 $num_lines
