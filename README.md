@@ -36,3 +36,5 @@ For the rest of this document, I will describe each important file in the direct
 
 ## en.polli / es.polli
 These two files contain sentences separated by newlines, “en.polli” in English, “es.polli” in Spanish. Sentence (and line) n of en.polli corresponds to sentence n of es.polli -- thus, together, they conform to the side-by-side parallel corpus format that serves as the input to the polli pipeline. These two files are human-readable. For example:
+
+![alt tag](https://github.com/lgeron/polli_workflow/tree/master/assets/en_es.png)
