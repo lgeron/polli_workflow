@@ -7,10 +7,14 @@ GIZA=$WD/giza-pp
 mkdir output_source
 mkdir output_tgt
 
-FILE1=$1
-FILE2=$2
-l1="${FILE1%%.*}"
-l2="${FILE2%%.*}"
+# CSV needs to be in the format L1-L2.csv for the pipeline to work! e.g. en-es.csv
+CSV=$1
+python process_csv.py $CSV > langs.txt
+FILE1=$WD/L1.txt
+FILE2=$WD/L2.txt
+l1=sed '1q;d' $WD/langs.txt
+l2=sed '2q;d' $WD/langs.txt
+rm $WD/langs.txt
 
 # TOKENIZE
 
